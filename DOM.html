@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang>
+<head>
+    
+    <title>JavaScript DOM</title>
+</head>
+<body>
+    <p id="paragraph">This is paragraph</p>
+
+    <script>
+        const divelement=document.createElement("div");
+        const text=document.createTextNode("div element inserted before paragraph element");
+        divelement.appendChild(text);
+        const image=document.createElement("img");
+        image.src="image.jpg";
+        image.style.border="3px solid #000000";
+        document.body.insertBefore(divelement,document.getElementById("paragraph"));
+        document.body.appendChild(image);
+    </script>
+</body>
+</html>
